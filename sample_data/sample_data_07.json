@@ -1,0 +1,26 @@
+[
+  {
+    "item_id": "55844",
+    "category_id": "37973",
+    "name": "Item G",
+    "dept": "Electronics"
+  },
+  {
+    "item_id": "56271",
+    "category_id": "87018",
+    "name": "Item J",
+    "dept": "Hardware"
+  },
+  {
+    "item_id": "60184",
+    "category_id": "15624",
+    "name": "Item O",
+    "dept": "Electronics"
+  },
+  {
+    "item_id": "67750",
+    "category_id": "86262",
+    "name": "Item D",
+    "dept": "Electronics"
+  }
+]

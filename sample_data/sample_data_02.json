@@ -1,0 +1,26 @@
+[
+  {
+    "item_id": "84152",
+    "category_id": "37332",
+    "name": "Item I",
+    "dept": "Home & Kitchen"
+  },
+  {
+    "item_id": "92249",
+    "category_id": "23684",
+    "name": "Item H",
+    "dept": "Home & Kitchen"
+  },
+  {
+    "item_id": "19154",
+    "category_id": "93871",
+    "name": "Item H",
+    "dept": "Hardware"
+  },
+  {
+    "item_id": "26472",
+    "category_id": "43060",
+    "name": "Item V",
+    "dept": "Hardware"
+  }
+]

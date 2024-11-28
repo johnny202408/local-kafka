@@ -1,0 +1,26 @@
+[
+  {
+    "item_id": "42286",
+    "category_id": "63159",
+    "name": "Item Q",
+    "dept": "Appliances"
+  },
+  {
+    "item_id": "53228",
+    "category_id": "85698",
+    "name": "Item L",
+    "dept": "Home & Kitchen"
+  },
+  {
+    "item_id": "57333",
+    "category_id": "66099",
+    "name": "Item I",
+    "dept": "Electronics"
+  },
+  {
+    "item_id": "93002",
+    "category_id": "16021",
+    "name": "Item A",
+    "dept": "Electronics"
+  }
+]
