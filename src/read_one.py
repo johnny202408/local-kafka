@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from confluent_kafka import Consumer, KafkaException
 
 # Kafka configuration

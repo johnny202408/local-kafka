@@ -1,26 +1,26 @@
 [
   {
-    "item_id": "23562",
-    "category_id": "60652",
-    "name": "Item U",
+    "item_id": "95293",
+    "category_id": "51644",
+    "name": "Item S",
+    "dept": "Appliances"
+  },
+  {
+    "item_id": "42878",
+    "category_id": "50263",
+    "name": "Item B",
     "dept": "Electronics"
   },
   {
-    "item_id": "50750",
-    "category_id": "51773",
-    "name": "Item O",
-    "dept": "Hardware"
+    "item_id": "78264",
+    "category_id": "21644",
+    "name": "Item R",
+    "dept": "Home & Kitchen"
   },
   {
-    "item_id": "20635",
-    "category_id": "67125",
-    "name": "Item V",
-    "dept": "Hardware"
-  },
-  {
-    "item_id": "40735",
-    "category_id": "49237",
-    "name": "Item H",
-    "dept": "Hardware"
+    "item_id": "42018",
+    "category_id": "11524",
+    "name": "Item E",
+    "dept": "Appliances"
   }
 ]
