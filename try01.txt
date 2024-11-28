@@ -1,0 +1,9 @@
+src - main - java - new_app - App 
+main - load configuration
+  app(configuration)
+
+public static void app(Properties configuration) {
+while (true) {
+
+}
+
