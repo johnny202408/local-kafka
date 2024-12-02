@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import json
+import argparse
 from confluent_kafka import Producer
 
 # Configuration for Kafka
@@ -17,28 +18,31 @@ def delivery_report(err, msg):
     else:
         print(f"Message delivered to {msg.topic()} [{msg.partition()}]")
 
-def send_json_to_kafka(file_path, topic):
+def send_json_to_kafka(file_path, topic, num_messages=1):
     try:
         with open(file_path, 'r') as file:
             data = json.load(file)
             message = json.dumps(data)
 
-            producer.produce(topic, message, callback=delivery_report)
-            producer.flush()
+            for _ in range(num_messages):
+                producer.produce(topic, message, callback=delivery_report)
+                producer.flush()
 
-            print("Message sent successfully!")
-    # except Exception as e:
+            print(f"{num_messages} message(s) sent successfully!")
     except FileNotFoundError:
         print("Error: Cannot find the sample json data.")
         print("Please run this from the main project library")
         print("Usage: src/produce_message.py")
         print("Or")
         print("Usage: python3 src/produce_message.py")
-        # print(f"Error: {e}")
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Kafka producer script")
+    parser.add_argument("-n", "--num_messages", type=int, default=1,
+                        help="Number of messages to send (default: 1)")
+    args = parser.parse_args()
+
     json_file_path = 'sample_data/sample_data_01.json'  # Path to your JSON file
     kafka_topic = 'topic-try01'
 
-    send_json_to_kafka(json_file_path, kafka_topic)
-        
+    send_json_to_kafka(json_file_path, kafka_topic, args.num_messages)
