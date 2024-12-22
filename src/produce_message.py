@@ -9,6 +9,8 @@ kafka_config = {
     'bootstrap.servers': 'localhost:9092',  # Adjust if needed
 }
 
+default_topic = 'my-topic'
+
 # Create a Kafka producer
 producer = Producer(kafka_config)
 
@@ -44,6 +46,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     json_file_path = 'sample_data/sample_data_01.json'  # Path to your JSON file
-    kafka_topic = 'topic-try01'
+    kafka_topic = default_topic
 
     send_json_to_kafka(json_file_path, kafka_topic, args.num_messages)

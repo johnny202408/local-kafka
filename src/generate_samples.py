@@ -37,6 +37,7 @@ def generate_random_data():
             "item_id": str(random.randint(10000, 99999)),
             "category_id": str(random.randint(10000, 99999)),
             "name": f"Item {chr(random.randint(65, 90))}",
+            "product_type": "widget",
             "dept": random.choice(["Electronics", "Home & Kitchen", "Hardware", "Appliances"])
         } for _ in range(4)
     ]
