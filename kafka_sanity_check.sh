@@ -1,3 +1,4 @@
+#!/bin/sh
 echo ---------------------------
 echo Local Kafka // Sanity check
 echo ---------------------------

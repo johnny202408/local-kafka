@@ -8,6 +8,9 @@ kafka_config = {
     'auto.offset.reset': 'earliest',  # Start reading from the beginning if no offset is committed
 }
 
+default_topic = 'my-topic'
+
+
 # Create Kafka consumer
 consumer = Consumer(kafka_config)
 
@@ -32,5 +35,5 @@ def consume_one_message(topic):
         consumer.close()
 
 if __name__ == "__main__":
-    kafka_topic = 'topic-try01'
+    kafka_topic = default_topic
     consume_one_message(kafka_topic)
