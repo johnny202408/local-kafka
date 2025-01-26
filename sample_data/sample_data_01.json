@@ -1,30 +1,8 @@
-[
-  {
-    "item_id": "84747",
-    "category_id": "89934",
-    "name": "Item U",
-    "product_type": "widget",
-    "dept": "Electronics"
-  },
-  {
-    "item_id": "71762",
-    "category_id": "61873",
-    "name": "Item N",
-    "product_type": "widget",
-    "dept": "Hardware"
-  },
-  {
-    "item_id": "91090",
-    "category_id": "14124",
-    "name": "Item Z",
-    "product_type": "widget",
-    "dept": "Electronics"
-  },
-  {
-    "item_id": "69171",
-    "category_id": "25036",
-    "name": "Item C",
-    "product_type": "widget",
-    "dept": "Home & Kitchen"
-  }
-]
+{
+  "item_id": "84747",
+  "category_id": "89934",
+  "name": "Item U",
+  "ProductType": "widget",
+  "dept": "Electronics"
+}
+  

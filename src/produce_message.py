@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 import json
 import argparse
 from confluent_kafka import Producer
@@ -10,6 +9,7 @@ kafka_config = {
 }
 
 default_topic = 'my-topic'
+# default_topic = 'example-topic'
 
 # Create a Kafka producer
 producer = Producer(kafka_config)
@@ -26,6 +26,8 @@ def send_json_to_kafka(file_path, topic, num_messages=1):
         with open(file_path, 'r') as file:
             data = json.load(file)
             message = json.dumps(data)
+
+            print(message)
 
             for _ in range(num_messages):
                 producer.produce(topic, message, callback=delivery_report)
