@@ -36,7 +36,26 @@ stream one sample file into the kafka cluster:
 read one message from the kafka cluster:  
 ```python3 src/read_one.py```
 
+
+```bash  
+curl http://localhost:8083/connectors/elasticsearch-sink-connector/status | jq
+```
+
 ---
+
+
+
+## Main requirements
+- Use a custom java 17 jar on gradle 8.8 / groovy
+- consume a kafka topic into an elasticsearch alias
+- write into an elasticsearch 6.8 alias
+- work in batches
+- the name of the alias is determined from the ProductType field value in the message
+- if the alias does not exist, it's required to create it before writing into elasticsearch. 
+   the underlying index should be the alias name with a -000001 prefix.
+
+
+
 
 written by me
 
